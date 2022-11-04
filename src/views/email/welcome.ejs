@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <%- include("./components/head.ejs") %>
+    <body style="width: 100% !important; height: 100%; -webkit-text-size-adjust: none; font-family: Nunito Sans, Helvetica, Arial, sans-serif; background-color: #F4F4F7; color: #51545E; margin: 0;" bgcolor="#F4F4F7">
+        <span class="preheader" style="display: none !important; visibility: hidden; mso-hide: all; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden;">Thanks for trying out <%= productName %>. We’ve pulled together some information and resources to help you get started.</span>
+        <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; background-color: #F4F4F7; margin: 0; padding: 0;" bgcolor="#F4F4F7">
+        <tr>
+            <td align="center" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px;">
+            <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; margin: 0; padding: 0;">
+                <tr>
+                <td class="email-masthead" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 25px 0;" align="center">
+                    <%- include("./body/header.ejs", {productName: productName, domain: domain, companyName: companyName}) %>
+                </td>
+                </tr>
+                <!-- Email Body -->
+                <tr>
+                <td class="email-body" width="100%" cellpadding="0" cellspacing="0" style="word-break: break-word; margin: 0; padding: 0; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+                    <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation" style="width: 570px; -premailer-width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; background-color: #FFFFFF; margin: 0 auto; padding: 0;" bgcolor="#FFFFFF">
+                    <!-- Body content -->
+                    <tr>
+                        <td class="content-cell" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; padding: 35px;">
+                        <div class="f-fallback">
+                            <h1 style="margin-top: 0; color: #333333; font-size: 22px; font-weight: bold; text-align: left;" align="left">Welcome, <%= name %>!</h1>
+                            <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;">Thanks for trying <%= productName %>. We’re thrilled to have you on board. To get the most out of <%= productName %>, do this primary next step:</p>
+                            <!-- Action -->
+                            <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%; -premailer-width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; text-align: center; margin: 30px auto; padding: 0;">
+                            <tr>
+                                <td align="center" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px;">
+                                <!-- Border based button https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                    <tr>
+                                    <td align="center" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px;">
+                                        <a href="<%= domain %>" class="f-fallback button" target="_blank" style="color: #FFF; border-color: #3869d4; border-style: solid; border-width: 10px 18px; background-color: #3869D4; display: inline-block; text-decoration: none; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); -webkit-text-size-adjust: none; box-sizing: border-box;">Do this Next</a>
+                                    </td>
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>
+                            </table>
+                            <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;">For reference, here's your login information:</p>
+                            <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 21px;">
+                            <tr>
+                                <td class="attributes_content" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; background-color: #F4F4F7; padding: 16px;" bgcolor="#F4F4F7">
+                                <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                    <td class="attributes_item" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; padding: 0;">
+                                        <span class="f-fallback"><strong>Login Page:</strong> <%= domain %>login</span>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td class="attributes_item" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; padding: 0;">
+                                        <span class="f-fallback"><strong>Username:</strong> <%= name %></span>
+                                    </td>
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>
+                            </table>
+                            <!-- <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;">You've started a {{trial_length}} day trial. You can upgrade to a paying account or cancel any time.</p>
+                            <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 0 21px;">
+                            <tr>
+                                <td class="attributes_content" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; background-color: #F4F4F7; padding: 16px;" bgcolor="#F4F4F7">
+                                <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tr>
+                                    <td class="attributes_item" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; padding: 0;">
+                                        <span class="f-fallback"><strong>Trial Start Date:</strong> {{trial_start_date}}</span>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td class="attributes_item" style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px; padding: 0;">
+                                        <span class="f-fallback"><strong>Trial End Date:</strong> {{trial_end_date}}</span>
+                                    </td>
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>
+                            </table> -->
+                            <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;">If you have any questions, feel free to <a href="mailto:292222369@qq.com" style="color: #3869D4;">email our customer success team</a>. (We're lightning quick at replying.) </p>
+                            <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;">Thanks,
+                            <br /><%= productName %> Team</p>
+                            <p style="font-size: 16px; line-height: 1.625; color: #51545E; margin: .4em 0 1.1875em;"><strong>P.S.</strong> Need immediate help getting started? Check out our <a href="<%= domain %>help" style="color: #3869D4;">help documentation</a>. Or, just reply to this email, the <%= productName %> support team is always ready to help!</p>
+                            <!-- Sub copy -->
+                            <%- include("./body/copy.ejs", {productName: productName, domain: domain, companyName: companyName}) %>
+                        </div>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+                </tr>
+                <tr>
+                <td style="word-break: break-word; font-family: Nunito Sans Helvetica, Arial, sans-serif; font-size: 16px;">
+                    <%- include("./body/footer.ejs", {productName: productName, domain: domain, companyName: companyName}) %>
+                </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        </table>
+    </body>
+</html>
