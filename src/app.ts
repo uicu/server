@@ -38,7 +38,7 @@ app.use(views(path.join(__dirname, './views'), {
 }));
 
 // 静态资源文件夹
-app.use(koaStatic(path.join( __dirname, './static')));
+app.use(koaStatic(path.join( __dirname, './public')));
 app.use(koaStatic(path.join( __dirname, './uploads')));
 
 // 返回json格式且易读的错误提示是有必要的
