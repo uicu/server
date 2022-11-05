@@ -1,27 +1,35 @@
 import Koa from 'koa';
 class Home {
     async index(ctx: Koa.Context) {
-        const title = 'index';
+        const title = '首页';
+        const description = '首页';
         await ctx.render('home/index', {
-            title
+            title,
+            description
         });
     }
     async about(ctx: Koa.Context) {
-        const title = 'about';
+        const title = '关于我';
+        const description = 'description';
         await ctx.render('home/about', {
-            title
+            title,
+            description
         });
     }
     async contact(ctx: Koa.Context) {
-        const title = 'contact';
+        const title = '联系我';
+        const description = 'description';
         await ctx.render('home/contact', {
-            title
+            title,
+            description
         });
     }
     async detail(ctx: Koa.Context) {
-        const title = 'detail';
+        const title = '详情';
+        const description = 'description';
         await ctx.render('home/detail', {
-            title
+            title,
+            description
         });
     }
     help(ctx: Koa.Context) {
